@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/El Pollo Loco.css">
+    <link rel="stylesheet" href="css/Mobile Max Width.css">
+    <link rel="stylesheet" href="css/Mobile Max Height.css">
+    <link rel="shortcut icon" href="img\Own\kiwi-bird-solid.svg" type="image/x-icon"/>
+    <title>El Pollo Loco</title>
+
+    <script src="./javascript/models/drawable-object.class.js" defer></script>
+    <script src="./javascript/models/movable-object.class.js" defer></script>
+    <script src="./javascript/models/character.class.js" defer></script>
+    <script src="./javascript/models/chicken.class.js" defer></script>
+    <script src="./javascript/models/small-chicken.class.js" defer></script>
+    <script src="./javascript/models/background-object.class.js" defer></script>
+    <script src="./javascript/models/keyboard.class.js" defer></script>
+    <script src="./javascript/models/coin-Object.class.js" defer></script>
+    <script src="./javascript/models/pickup-ammo.class.js" defer></script>
+    <script src="./javascript/models/cloudA.class.js" defer></script>
+    <script src="./javascript/models/cloudB.class.js" defer></script>
+    <script src="./javascript/models/status-bar.class.js" defer></script>
+    <script src="./javascript/models/boss-Statusbar.class.js" defer></script>
+    <script src="./javascript/models/coin-bar.class.js" defer></script>
+    <script src="./javascript/models/ammo-bar.class.js" defer></script>
+    <script src="./javascript/models/Throwable-objects.class.js" defer></script>
+    <script src="./javascript/models/chicken-boss.class.js" defer></script>
+    <script src="./javascript/models/level.class.js" defer></script>
+    <script src="./javascript/levels/level1.js" defer></script>
+    <script src="./javascript/models/world.class.js" defer></script>
+    <script src="./javascript/game.js" defer></script>
+
+</head>
+
+<body onload="init()">
+
+
+    <h1> El pollo Loco</h1>
+    <div class="Topside">
+        <div class="mobileButtonsContainer">
+            <button id="btnESC" class="mobileButtons"><img class="mobileButtonsImg"
+                    src="img\Own\gear-solid.svg"></button>
+            <button id="MusicBtn" class="MusicBtn" onclick="EnableSounds()">
+                <img class="mobileButtonsImg" src="img\Own\music-solid.svg"></button>
+            <button id="CloseIndrodutionBtn" class="CloseIndrodutionBtn d-none" onclick="CloseIndrodution()">
+                <img class="mobileButtonsImg" src="img\Own\x-solid.svg"></button>
+        </div>
+    </div>
+    <canvas class="canvas" id="canvas" width="720" height="480">
+    </canvas>
+    <div id="MenuImagen" class="MenuImagen d-none">
+        <div class="container">
+            <button onclick="BlockGamePauseFunction()" id="StartButton" class="MenuButtons">Start</button>
+            <button onclick="OpenIndrodution()" class="MenuButtons IntroductionButton">Introduction</button>
+        </div>
+
+    </div>
+    <div id="IntroductionImagen" class="IntroductionImagen d-none">
+        <div class="IntroductionContainer">
+            <div>Arrow Right to Move Right</div>
+            <div>Arrow Left to Move Left</div>
+            <div>Arrow Top to Jump</div>
+            <div>Arrow ESC to Stop The Game</div>
+            <div>Arrow D to Bottle Throwable</div>
+        </div>
+
+    </div>
+    <div id="FinishVictory" class="FinishVictory d-none">
+        <div class="containerEnding">
+            <button onclick="ResetTheGame('FinishVictory')" id="RetryButton" class="RetryButton">
+                <img class="mobileButtonsImg" src="img\Own\arrow-rotate-right-solid.svg">
+            </button>
+        </div>
+    </div>
+    <div id="FinishLost" class="FinishLost d-none">
+        <div class="containerEnding">
+            <button onclick="ResetTheGame('FinishLost')" id="RetryButton" class="RetryButton">
+                <img class="mobileButtonsImg" src="img\Own\arrow-rotate-right-solid.svg">
+            </button>
+        </div>
+    </div>
+    <div class="Downside">
+        <div class="mobileButtonsContainer">
+            <button id="btnLeft" class="mobileButtons"><img class="mobileButtonsImg"
+                    src="img\Own\arrow-left-solid.svg"></button>
+            <button id="btnRight" class="mobileButtons"><img class="mobileButtonsImg"
+                    src="img\Own\arrow-right-solid.svg"></button>
+        </div>
+        <div class="mobileButtonsContainer">
+            <button id="btnUP" class="mobileButtons"><img class="mobileButtonsImg"
+                    src="img\Own\arrow-up-solid.svg"></button>
+            <button id="btnD" class="mobileButtons"><img class="mobileButtonsImg"
+                    src="img\Own\wine-bottle-solid.svg"></button>
+        </div>
+        <button class="d-none">M</button>
+    </div>
+    <div id="Device" class="Device">
+        <img class="DeviceImagen" src="img\Own\arrow-rotate-right-solid.svg">
+        <span class="DeviceAlert"> Please turn you Mobile Phone</span>  
+    </div>
+
+
+</body>
+
+</html>

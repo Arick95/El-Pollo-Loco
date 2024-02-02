@@ -1,0 +1,333 @@
+@media (min-width: 1400px) {
+    .mobileButtons {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    h1 {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+        width: 96vw;
+    }
+
+    canvas {
+        width: 450px;
+        height: 250px;
+    }
+
+    .CloseIndrodutionBtn {
+        display: none;
+    }
+
+    .IntroductionButton {
+        display: none;
+    }
+
+    .MenuImagen {
+        width: 450px;
+        height: 250px;
+        background-position-x: 0;
+    }
+
+    .Topside {
+        width: 450px;
+        height: 25px;
+    }
+
+    .Downside {
+        width: 450px;
+        height: 25px;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .MenuButtons {
+        margin-top: 25px;
+        height: 25px;
+        width: 100px;
+        font-size: 17px;
+    }
+
+    .MenuButtons:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .IntroductionImagen {
+        width: 450px;
+        height: 250px;
+
+    }
+
+    .FinishVictory {
+        width: 450px;
+        background-color: #99450994;
+        border: 5px solid #3e1503;
+        border-bottom: 0px;
+        border-top: 0px;
+        height: 250px;
+        background-image: url('../img/9_intro_outro_screens/game_over/game over.png');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: -55px;
+    }
+
+    .FinishLost {
+        width: 450px;
+        background-color: #99450994;
+        border: 5px solid #3e1503;
+        border-bottom: 0px;
+        border-top: 0px;
+        height: 250px;
+        background-image: url('../img/9_intro_outro_screens/game_over/game over.png');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: -55px;
+    }
+
+    .containerEnding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 190px;
+    }
+
+    .RetryButton {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        background-color: rgb(226, 97, 51);
+    }
+
+    .Downside {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .mobileButtonsContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 55px;
+    }
+
+    .mobileButtons {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: bisque;
+        font-size: 12px;
+    }
+
+    .MusicBtn {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        font-size: 12px;
+    }
+
+    .mobileButtonsImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        width: 96vw;
+    }
+
+    canvas {
+        width: 300px;
+        height: 200px;
+    }
+
+    .MenuImagen {
+        width: 300px;
+        height: 200px;
+    }
+
+    .Topside {
+        width: 300px;
+        height: 25px;
+    }
+
+    .Downside {
+        width: 300px;
+        height: 25px;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .MenuButtons {
+        margin-top: 25px;
+        height: 25px;
+        width: 100px;
+        font-size: 17px;
+    }
+
+    .MenuButtons:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .IntroductionImagen {
+        width: 300px;
+        height: 200px;
+    }
+
+    .FinishVictory {
+        width: 300px;
+        background-color: #99450994;
+        border: 5px solid #3e1503;
+        border-bottom: 0px;
+        border-top: 0px;
+        height: 200px;
+        background-image: url('../img/9_intro_outro_screens/game_over/game over.png');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: -55px;
+    }
+
+    .FinishLost {
+        width: 300px;
+        background-color: #99450994;
+        border: 5px solid #3e1503;
+        border-bottom: 0px;
+        border-top: 0px;
+        height: 200px;
+        background-image: url('../img/9_intro_outro_screens/game_over/game over.png');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: -35px;
+    }
+
+    .containerEnding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .RetryButton {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: rgb(226, 97, 51);
+    }
+
+    .Downside {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .mobileButtonsContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 55px;
+    }
+
+    .mobileButtons {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: bisque;
+        font-size: 12px;
+    }
+
+    .mobileButtonsImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width: 1000px) {
+
+    .Device {
+        top: 0px;
+        background-color: black;
+        width: 108vw;
+        height: 105vh;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .DeviceAlert {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+        color: white;
+        font-size: 28px;
+    }
+
+    .DeviceImagen {
+        height: 60px;
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media screen and (orientation:landscape) {
+
+    .Device {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Device {
+        width: 124vw !important;
+        height: 113vh !important;
+    }
+
+    canvas {
+        width: 260px !important;
+        height: 250px !important;
+    }
+
+    .Topside {
+        width: 260px !important;
+        height: 23px !important;
+    }
+
+    .MenuImagen {
+        width: 260px !important;
+        height: 250px !important;
+        background-position-x: 0 !important;
+    }
+
+    .Downside {
+        width: 260px !important;
+        height: 17px !important;
+    }
+
+    .mobileButtonsContainer{
+        gap: 28px !important;
+        margin-left: 23px !important;
+        margin-right: 21px !important; 
+        margin-top: -10px !important;
+        margin-bottom: -12px !important;
+    }
+}

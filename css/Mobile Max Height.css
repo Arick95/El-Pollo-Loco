@@ -1,0 +1,325 @@
+@media (min-height: 1400px) {
+    .mobileButtons {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+}
+
+@media (max-height: 770px) {
+
+    h1 {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+        width: 96vw;
+    }
+
+    canvas {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .CloseIndrodutionBtn {
+        display: none;
+    }
+
+    .IntroductionButton {
+        display: none;
+    }
+
+    .MenuImagen {
+        width: 50vw;
+        height: 65vh;
+        background-position-x: 0;
+    }
+
+    .Topside {
+        width: 50vw;
+        height: 10vh;
+    }
+
+    .Downside {
+        width: 50vw;
+        height: 9vh;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .MenuButtons {
+        margin-top: 25px;
+        height: 25px;
+        width: 100px;
+        font-size: 17px;
+    }
+
+    .MenuButtons:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .IntroductionImagen {
+        width: 450px;
+        height: 250px;
+
+    }
+
+    .FinishVictory {
+        width: 450px;
+        background-color: #99450994;
+        border: 5px solid #3e1503;
+        border-bottom: 0px;
+        border-top: 0px;
+        height: 250px;
+        background-image: url('../img/9_intro_outro_screens/game_over/game over.png');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: -55px;
+    }
+
+    .FinishLost {
+        width: 450px;
+        background-color: #99450994;
+        border: 5px solid #3e1503;
+        border-bottom: 0px;
+        border-top: 0px;
+        height: 250px;
+        background-image: url('../img/9_intro_outro_screens/game_over/game over.png');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: -55px;
+    }
+
+    .containerEnding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 190px;
+    }
+
+    .RetryButton {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        background-color: rgb(226, 97, 51);
+    }
+
+    .Downside {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .mobileButtonsContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 55px;
+    }
+
+    .mobileButtons {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: bisque;
+        font-size: 12px;
+    }
+
+    .MusicBtn {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        font-size: 12px;
+    }
+
+    .mobileButtonsImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    body {
+        height: 100vh;
+        width: 96vw;
+    }
+
+    canvas {
+        width: 79vw;
+        height: 65vh;
+    }
+
+    .MenuImagen {
+        width: 79vw;
+        height: 65vh;
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+
+    .Topside {
+        margin-top: 12px;
+        width: 79vw;
+        height: 8vh;
+    }
+
+    .Downside {
+        width: 79vw;
+        height: 9vh;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .MenuButtons {
+        margin-top: 25px;
+        height: 25px;
+        width: 100px;
+        font-size: 17px;
+    }
+
+    .MenuButtons:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .IntroductionImagen {
+        width: 300px;
+        height: 200px;
+    }
+
+    .FinishVictory {
+        width: 79vw;
+        height: 65vh;
+        background-position-y: -55px;
+    }
+
+    .FinishLost {
+        width: 79vw;
+        height: 65vh;
+        background-position-y: -35px;
+    }
+
+    .containerEnding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .RetryButton {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        background-color: rgb(226, 97, 51);
+    }
+
+    .Downside {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .mobileButtonsContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 42px;
+    }
+
+    .mobileButtons {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: bisque;
+        font-size: 12px;
+    }
+
+    .mobileButtonsImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-height: 600px) {
+
+    .Device {
+        top: 0px;
+        background-color: black;
+        width: 108vw;
+        height: 105vh;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .DeviceAlert {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+        color: white;
+        font-size: 28px;
+    }
+
+    .DeviceImagen {
+        height: 60px;
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media screen and (orientation:landscape) {
+
+    .Device {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 400px){
+    canvas {
+        width: 52vw;
+        height: 65vh;
+    }
+
+    .MenuImagen {
+        width: 52vw;
+        height: 65vh;
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+
+    .Topside {
+        margin-top: 12px;
+        width: 52vw;
+        height: 8vh;
+    }
+
+    .Downside {
+        width: 52vw;
+        height: 9vh;
+    }
+    .FinishVictory {
+        width: 52vw;
+        height: 65vh;
+    }
+
+    .FinishLost {
+        width: 52vw;
+        height: 65vh;
+    }
+
+}
